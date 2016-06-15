@@ -13,7 +13,6 @@ app.get("/", function(request, response) {
   var language = request.headers["accept-language"].split(',')[0];
   var software = request.headers['user-agent'].split(') ')[0].split(' (')[1];
   
-  
   response.json({
     'ip-address': ip,
     'language': language,
